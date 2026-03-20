@@ -21,6 +21,11 @@ app.get('/contacts', function (req, res) {
     res.render('contacts', req.query);
 });
 
+// Отображаем Акции с использованием шаблона "promo.hbs"
+app.get('/promo', function (req, res) {
+    res.render('promo', req.query);
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log("Listening on " + port));
