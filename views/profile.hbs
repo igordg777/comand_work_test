@@ -1,1 +1,96 @@
-<h1>Данные пользователя</h1>
+<head>
+    <style>
+        .profile {
+            width: 300px;
+            height: auto;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        .profile-title-root {
+            position: relative;
+            height: 80px;
+        }
+
+        .profile-title {
+            width: 300px;
+            background-color: rgb(31, 112, 204);
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+        }
+
+        .profile-title-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: white;
+            text-align: center;
+        }
+
+        .profile-photo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-photo-params {
+            display: flex;
+            width: 216px;
+            height: 216px;
+            border-radius: 25%;
+        }
+
+        .profile-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            font-weight: bolder;
+        }
+
+        .profile-link:active,
+        .profile-link:hover,
+        .profile-link {
+        text-decoration: none;
+        color: rgb(31, 112, 204);
+        }
+
+        .profile-link-exit:active,
+        .profile-link-exit:hover,
+        .profile-link-exit {
+        text-decoration: none;
+        color: rgb(145, 22, 15);
+        }
+    </style>
+</head>
+<main>
+    <article class="profile">
+        <div class="profile-title-root">
+            <div  class="profile-title">
+                <h1 class="profile-title-text">Данные пользователя</h1>
+            </div>
+        </div>
+        <section class="profile-photo">
+            <div>
+                <img  class="profile-photo-params" src="https://pbs.twimg.com/media/E1X8Bs1XoAYRGep.jpg" alt="Фотография профиля">
+            </div>
+        </section>
+        <section class="profile-info">
+            <p class="profile-text">Фамилия:</p>
+            <p class="profile-text">Имя:</p>
+            <p class="profile-text">Отчество:</p>
+            <p class="profile-text">Пол:</p>
+            <p class="profile-text">E-mail:</p>
+        </section>
+        <section class="profile-links">
+            <p><a class="profile-text profile-link" href="bascet.hbs">Корзина</a></p>
+            <p><a class="profile-text profile-link" href="">Изменить данные</a></p>
+        </section>
+        <section class="profile-exit">
+            <p><a class="profile-text profile-link-exit" href="index">Выйти из профиля</a></p>
+        </section>
+    </article>
+</main>
