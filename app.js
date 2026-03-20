@@ -21,6 +21,12 @@ app.get('/contacts', function (req, res) {
     res.render('contacts', req.query);
 });
 
+
+// Отображаем контакты с использованием шаблона "about_us.hbs"
+app.get('/about_us', function (req, res) {
+    res.render('about_us', req.query);
+});
+
 // Отображаем контакты с использованием шаблона "profile.hbs"
 app.get('/profile', function (req, res) {
     res.render('profile', req.query);
