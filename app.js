@@ -26,7 +26,7 @@ app.get('/about_us', function (req, res) {
     res.render('about_us', req.query);
 });
 
-// Отображаем контакты с использованием шаблона "profile.hbs"
+// Отображаем данные пользователя с использованием шаблона "profile.hbs"
 app.get('/profile', function (req, res) {
     res.render('profile', req.query);
 });
